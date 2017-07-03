@@ -95,6 +95,20 @@ let runSwitch2 = (list:boolean[],index:number)=>{
     }
 }
 
+//一个数X的平方不大于N，则N下X的平方的因子数为奇数
+//当一个整数的因子数量为奇数,这个数一定是完全平方
+let run5 = (num:number)=>{
+    let count = 0;
+    for(let i=1;i<=num;i++){
+        if(i*i<=2015){
+            count++
+        }else{
+            break;
+        }
+    }
+    console.log(count);
+}
+
 let list1:boolean[] = init(2015);
 Times = 0;
 run1(list1);
@@ -114,3 +128,5 @@ let list4:boolean[] = init(2015);
 Times = 0;
 run4(list4);
 console.log(Times);
+
+run5(2015);
