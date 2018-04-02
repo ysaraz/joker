@@ -1,0 +1,1 @@
+https://avgle.github.io/doc/#get-all-video-categories
